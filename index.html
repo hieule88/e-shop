@@ -123,13 +123,26 @@
                                 </a>
                             </li>
 
-                            <li class="header__navbar-item right-separate">
+                            <!-- <li class="header__navbar-item right-separate">
                                 <a href="" class="header__navbar-item-link text-bold">Đăng ký</a>
                             </li>
 
                             <li class="header__navbar-item">
                                 <a href="" class="header__navbar-item-link text-bold">Đăng nhập</a>
+                            </li> -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Hiếu Lê</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="">Tài khoản của tôi</a>
+                                        <a href="" class="">Địa chỉ của tôi</a>
+                                        <a href="" class="">Đơn mua</a>
+                                        <a href="" class="">Đăng xuất</a>
+                                    </li>
+                                </ul>
                             </li>
+
 
                         </ul>
                     </nav>
@@ -147,18 +160,193 @@
                         </div>
 
                         <div class="header__search">
-
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                                <!-- Search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Kem trị mụn</a>
+                                        </li>
+                                    </ul>
+                                
+                                
+                                </div>
+                            
+                            </div>
+                            <div class="header__cart-select">
+                                <span class="header__cart-select-label">Trong shop</span>
+                                <i class="fas fa-angle-down header__cart-select-icon"></i>
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item--active">
+                                        <span>Trong shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
                         </div>
 
                         <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="fas fa-shopping-cart header__cart-icon"></i>
+                                <span class="header__cart-notice">3</span>
 
+                                <!-- No cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="No item in cart" class="header__cart-no-card-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+
+                                    <!-- Cart item -->
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000đ</span>
+                                                        <span class="header__cart-item-mul">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000đ</span>
+                                                        <span class="header__cart-item-mul">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-infor">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000đ</span>
+                                                        <span class="header__cart-item-mul">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <div class="container">
+            <div class="app__container">
+                <div class="grid">
+                    <div class="grid__row app_content">
+                        <div class="grid__column-2">
+                            <nav class="category">
+    
+                                <h3 class="category__heading">
+                                    <i class="category__heading-icon fas fa-list"></i>
+                                    Danh mục
+                                </h3>
+                                <ul class="category-list">
+                                    <li class="category-item category-item--active">
+                                        <a href="#" class="category-item__link">
+                                        Trang điểm mặt    
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">
+                                        Trang điểm môi 
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">
+                                        Trang điểm mắt     
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
 
+                        <div class="grid__column-10">
+                            <div class="home-filter">
+                                <span class="home-filter__label">Sắp xếp theo</span>
+                                <button class="home-filter__btn btn">Phổ biển</button>
+                                <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                                <button class="home-filter__btn btn">Bán chạy</button>
+                                
+                                <div class="select-input">
+                                    <span class="select-input__label">Giá</span>
+                                    <i class="select-input__icon fas fa-angle-down"></i>
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="home-filter__paginate">
+                                    <span class="home-filter__page-num">
+                                        <span class="home-filter__page-current">1</span>
+                                        /14
+                                    </span>
+                                    <div class="home-filter__page-control">
+                                        <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                            <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="" class="home-filter__page-btn">
+                                            <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <footer class="footer">

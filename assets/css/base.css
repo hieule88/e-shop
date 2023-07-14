@@ -23,6 +23,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -36,6 +37,21 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
 }
 
 /* Animtion */
@@ -86,7 +102,7 @@ html {
 
 /* button */
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     min-height: 34px;
     text-decoration: none;
     border: none;
@@ -97,7 +113,7 @@ html {
     cursor: pointer;
     color: var(--text-color);
     background-color: var(--white-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
@@ -124,3 +140,60 @@ html {
     background-color: #c3c3c3;
 }
 
+/* selection */
+
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input:hover 
+.select-input__list {
+    display: block;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 10px 16px;
+    display: none;
+}
+
+.select-input__item {
+}
+
+.select-input__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 5px 0;
+    display: block;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
